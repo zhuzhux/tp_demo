@@ -1,0 +1,60 @@
+[ 2017-05-13T01:40:54+08:00 ] 127.0.0.1 /index.php?m=amdin&c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+ERR: 无法加载模块:Amdin
+
+[ 2017-05-13T01:41:39+08:00 ] 127.0.0.1 /index.php?m=amdin&c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+ERR: 无法加载模块:Amdin
+
+[ 2017-05-13T01:41:40+08:00 ] 127.0.0.1 /index.php?m=amdin&c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+ERR: 无法加载模块:Amdin
+
+[ 2017-05-13T01:41:51+08:00 ] 127.0.0.1 /index.php?m=amdin&c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+ERR: 无法加载模块:Amdin
+
+[ 2017-05-13T01:42:06+08:00 ] 127.0.0.1 /index.php?m=amdin&c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+ERR: 无法加载模块:Amdin
+
+[ 2017-05-13T01:42:11+08:00 ] 127.0.0.1 /index.php?m=amdin&c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+ERR: 无法加载模块:Amdin
+
+[ 2017-05-13T08:54:02+08:00 ] 127.0.0.1 /index.php?c=login&m=index&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+ERR: 无法加载模块:Index
+
+[ 2017-05-13T08:54:47+08:00 ] 127.0.0.1 /index.php?c=login&m=index&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+ERR: 无法加载模块:Index
+
+[ 2017-05-13T08:55:03+08:00 ] 127.0.0.1 /index.php?c=login&m=index&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+ERR: 无法加载模块:Index
+
+[ 2017-05-13T08:56:34+08:00 ] 127.0.0.1 /index.php?m=index&c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+ERR: 无法加载模块:Index
+
