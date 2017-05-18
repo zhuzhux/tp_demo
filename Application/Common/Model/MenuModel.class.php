@@ -13,7 +13,7 @@ class MenuModel extends Model{
 		if(!$data||!is_array($data)){
 			return 0;
 		}
-		return $this->_db->add('$data');
+		return $this->_db->add($data);
 	}
 }
 

@@ -12,6 +12,7 @@
 		public function add()
 		{
 			if($_POST){
+				
 				if(!isset($_POST['name'])||!$_POST['name']){
 					return show(0,"菜单名不能为空");
 				}
@@ -25,6 +26,7 @@
 					return show(0,"方法名不能为空");
 				}
 				$menuId = D('Menu')->insert($_POST);
+
 				if($menuId){
 					return show(1,'新增成功',$menuId);
 				}

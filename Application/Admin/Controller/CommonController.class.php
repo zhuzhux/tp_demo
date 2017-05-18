@@ -19,11 +19,12 @@ class CommonController extends Controller {
 	private function _init() {
 		// 如果已经登录
 		$isLogin = $this->isLogin();
-		
+
 		if(!$isLogin) {
 			// 跳转到登录页面
 			$this->redirect('/admin.php?c=login');
 		}
+		return ;
 	}
 
 	/**
@@ -40,7 +41,7 @@ class CommonController extends Controller {
 	 */
 	public function isLogin() {
 		$user = $this->getLoginUser();
-		if($user && is_array($user)) {
+		if($user && is_array($user) && $user['username']) {
 			return true;
 		}
 

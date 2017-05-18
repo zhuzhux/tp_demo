@@ -13,7 +13,7 @@ class LoginController extends Controller {
     		$this->redirect('/admin.php');
     	}
 
-    	return $this->display();
+    	$this->display();
     }
     public function check(){
     	$username = $_POST['username'];
@@ -33,7 +33,7 @@ class LoginController extends Controller {
 			return show(0,'该用户不存在');
 		}
     	
-    	if($ret['password'] != getMd5Password($password)){
+    	if($ret['password'] != ($password)){
     		return show(0,'密码错误');
     	}
 
