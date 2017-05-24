@@ -112,8 +112,8 @@
                     <select class="form-control" name="type">
                         <option value='' >请选择类型</option>
 
-                        <option value="1" >后台菜单</option>
-                        <option value="0" >前端导航</option>
+                        <option value="1" <?php if($type == 1): ?>selected="selected"<?php endif; ?> >后台菜单</option>
+                        <option value="0" <?php if($type == 0): ?>selected="selected"<?php endif; ?> >前端导航</option>
                     <lect>
                 </div>
 
@@ -148,11 +148,11 @@
                         <tbody>
                         <?php if(is_array($menus)): $i = 0; $__LIST__ = $menus;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$menu): $mod = ($i % 2 );++$i;?><tr>
                                 <td><input size="4" type="text" name="" value=""/></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td><?php echo ($menu["menu_id"]); ?></td>
+                                <td><?php echo ($menu["name"]); ?></td>
+                                <td><?php echo ($menu["m"]); ?></td>
+                                <td><?php echo (getMenuType($menu["type"])); ?></td>
+                                <td><?php echo (status($menu["status"])); ?></td>
                                 <td><span class="glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id=""></span>    <a href="javascript:void(0)" attr-id="" id="singcms-delete"  attr-a="menu" attr-message="删除"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a></td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 
@@ -161,7 +161,7 @@
                     </form>
                     <nav>
                         <ul class="pagination">
-                            
+                            <?php echo ($pageRes); ?>
                         </ul>
                     </nav>
                     
@@ -180,7 +180,7 @@
 <!-- /#page-wrapper -->
 
 </div>
-<!-- /#wrapper -->
+<!-- /#wrapper --> 
 <!-- Morris Charts JavaScript -->
 <script>
 

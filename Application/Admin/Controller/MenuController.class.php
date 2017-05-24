@@ -36,6 +36,27 @@
 			}
 		}
 		public function index(){
+			/*分页操作逻辑*/
+			$data = array();
+			if(isset($_REQUEST['type'])&&in_array($_REQUEST['type'],array(0,1))){
+				$data['type'] = intval($_REQUEST['type']);
+				$this->assign('type',$data['type']);
+			}else{
+				$this->assign('type',-100);
+			}
+
+			// 1是第一页
+			$page = $_REQUEST['p'] ? $_REQUEST['p']:1;
+			// 5是一页5行数据
+			$pageSize = $_REQUEST['pageSize']?$_REQUEST['pageSize']:5;
+			$menus = D("Menu")->getMenus($data,$page,$pageSize);
+			$menuCount = D("Menu")->getMenusCount($data);
+
+			$res = new \Think\Page($menuCount,$pageSize);
+			$pageRes = $res->show();
+			$this->assign('pageRes',$pageRes);
+			$this->assign('menus',$menus);
+
 			$this->display();
 		}
 	}
